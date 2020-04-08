@@ -1,11 +1,11 @@
 <script>
-  import pitchfinder from "pitchfinder";
-  import teoria from "teoria";
+  import {AMDF} from "pitchfinder";
+  import {note} from "teoria";
 
   let pitch;
   let style = "";
 
-  const detectPitch = pitchfinder.AMDF();
+  const detectPitch = AMDF();
   navigator.mediaDevices
     .getUserMedia({ audio: true, video: false })
     .then(function(stream) {
@@ -21,7 +21,7 @@
         const float32Array = e.inputBuffer.getChannelData(0); // get a single channel of sound
         const p = detectPitch(float32Array);
         if (p) {
-          pitch = teoria.note.fromFrequency(p);
+          pitch = note.fromFrequency(p);
         }
       };
     });
