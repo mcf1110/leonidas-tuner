@@ -25,11 +25,6 @@ h1 {
 	font-size: 1.4rem;
 }
 
-img{
-	width: 100vw;
-	margin-left: -2rem;
-}
-
 img.mirror {
 	transform: scaleX(-1);
 }
@@ -49,8 +44,9 @@ p.note{
 }
 
 .leonidas img{
-	height: 13rem;
+	height: 40vh;
 	object-fit: cover;
+	width: 100%;
 }
 
 .leonidas p {
@@ -60,15 +56,24 @@ p.note{
 }
 
 main{
-	margin-top: 1.5rem;
-	padding: 2rem;
+	margin: 4rem auto 0;
+	max-width: 1200px;
+	max-width: 600px;
 }
+
 
 .pointer{
 	height: 50vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+    position: absolute;
+	width: 100%;
+	max-width: 50vh;
+    left: 50%;
+	bottom: 0;
+	margin: auto;
+	transform: translateX(-50%);
 }
 
 .handle{
