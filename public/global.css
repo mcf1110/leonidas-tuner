@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+	
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #211718;
+	color: #F4E6E7;
+}
+
+h1 {
+	background: #A30817;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    margin: 0;
+    padding: .8rem;
+	text-align: center;
+	color: #F4E6E7;
+	font-size: 1.4rem;
+}
+
+img{
+	width: 100vw;
+	margin-left: -2rem;
+}
+
+img.mirror {
+	transform: scaleX(-1);
+}
+
+p{
+    margin: 0;
+    text-align: center;
+}
+
+p.note{
+	font-weight: bold;
+    font-size: 5rem;
+}
+
+.leonidas {
+	margin-top: 2rem;
+}
+
+.leonidas img{
+	height: 13rem;
+	object-fit: cover;
+}
+
+.leonidas p {
+	font-weight: bold;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+main{
+	margin-top: 1.5rem;
+	padding: 2rem;
+}
+
+.pointer{
+	height: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.handle{
+	background: #A30817;
+    width: 50%;
+    height: .2rem;
+	transform-origin: bottom right;
+	transition: transform .5s;
+}
